@@ -1,1 +1,76 @@
 
+/* Estilos do body */
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    transition: background 0.5s ease-in-out;
+    cursor: url("remo(1).png"), auto;
+}
+
+
+/* Estilos do #pagina-inicial */
+#pagina-inicial {
+    margin: 0;
+    position: absolute; /* Coloca a página inicial por cima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(
+        0deg,
+        #bd0000,
+        #bd0000 85px,
+        black 70px,  
+        black 175px
+    );
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: drop-shadow(7px 7px 3px rgba(0,0,0,0.25));
+    justify-content: center; 
+    align-items: center;
+}
+
+.logo:hover {
+    filter: brightness(1.5) drop-shadow(15px 14px 6px rgba(0,0,0,0.45));
+    transform: scale(1.1);
+    /* cursor: pointer; */
+}
+
+
+
+/* Estilos para a nova página */
+#pagina-nova {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    opacity: 1; /* Visível desde o início */
+    /* cursor: default; */
+}
+
+header{
+    background-color: #d80303;
+    height: 90px;
+    width: 100%;
+}
+nav{
+    justify-content: center;
+    display:flex;
+    gap:80px;
+}
+
+
+
+
+
