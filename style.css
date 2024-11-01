@@ -60,17 +60,113 @@ body {
 }
 
 header{
-    background-color: #d80303;
     height: 90px;
     width: 100%;
 }
-nav{
+/* nav{
     justify-content: center;
     display:flex;
     gap:80px;
+} */
+
+.hd-vermelho {
+    background-color: #dc3545;
+    padding: 10px 0;
 }
 
+.hd-preto {
+    background-color: #000;
+    padding: 15px 0;
+}
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Estilos para redes sociais */
+.header-social-icons {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
 
+.header-social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
 
+/* Logo e container adidas */
+.adidas-container {
+    text-align: center;
+}
+
+.adidas-container img.adidas {
+    width: 55px;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegador{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-navegador {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-navegador li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar-navegador li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Dropdown */
+.navbar-navegador .lista:hover .lista-menu {
+    display: block;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    list-style: none;
+}
+
+.lista-menu li {
+    padding: 5px 0;
+}
+
+.lista-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.lista-menu li a:hover {
+    background-color: #444;
+}
