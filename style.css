@@ -48,6 +48,7 @@ body {
 
 
 /* Estilos para a nova página */
+/* Estilos para a nova página */
 #pagina-nova {
     display: flex;
     justify-content: center;
@@ -55,9 +56,10 @@ body {
     flex-direction: column;
     text-align: center;
     color: black;
-    opacity: 1; /* Visível desde o início */
-    /* cursor: default; */
+    opacity: 0; /* Iniciar invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição de opacidade */
 }
+
 
 header{
     height: 90px;
