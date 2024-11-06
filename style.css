@@ -1,23 +1,23 @@
 
 /* Estilos do body */
+/* Estilos do body */
 body {
     margin: 0;
     width: 100%;
-    height: auto;
     transition: background 0.5s ease-in-out;
     cursor: url("remo(1).png"), auto;
 }
 
-
 /* Estilos do #pagina-inicial */
 #pagina-inicial {
     margin: 0;
-    position: absolute; /* Coloca a página inicial por cima */
+    position: fixed; /* Fixado para cobrir a tela inteira */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
+    z-index: 2;
     background: repeating-linear-gradient(
         0deg,
         #bd0000,
@@ -25,10 +25,10 @@ body {
         black 70px,  
         black 175px
     );
-   
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
+
 
 .logo {
     display: flex;
@@ -59,6 +59,7 @@ body {
     color: black;
     opacity: 0; /* Iniciar invisível */
     transition: opacity 0.5s ease-in-out; /* Transição de opacidade */
+    overflow: auto;
 }
 
 
@@ -183,8 +184,8 @@ header{
     display:grid;
     /* margin-top: 70px; */
     padding-top: 150px;
-    grid-template-columns: 250px 250px ;
-    grid-template-rows:300px 300px ;
+    grid-template-columns: 350px 350px ;
+    grid-template-rows:450px 450px ;
     grid-template-areas:"sozinha topo"
                         "sozinha baixo";
     justify-content: center;
@@ -194,17 +195,28 @@ header{
 }
 .noticias1{
     grid-area: sozinha;
-    background-color: #bd0000;
-
+    background: url('torcida.jpg');
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: center;
+    border: 1px solid red;
 }
 .noticias2{
     grid-area: topo;
-    background-color: #bd0000;
+    background-image:url('gerson&gabi.jpg');
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: top;
+    border: 1px solid red;
 
 }
 .noticias3{
     grid-area: baixo;
-    background-color: #bd0000;
+    background-image: url('arrascaepedro.jpg');
+    background-repeat: no-repeat;
+    background-size: 175%;
+    background-position: center;
+    border: 1px solid red; 
 }
 .ft-vermelho{
     background-color: #dc3545;
