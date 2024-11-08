@@ -69,18 +69,16 @@ header{
     height: 90px;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#dc3545 ;
 }
 /* nav{
     justify-content: center;
     display:flex;
     gap:80px;
 } */
-
-.hd-vermelho {
-    background-color: #dc3545;
-    padding: 10px 0;
-    height: 75px;
-}
 
 .hd-preto {
     background-color: #000;
@@ -111,7 +109,7 @@ header{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-top: 5px;
+   margin-left: 10%;
 }
 
 .adidas-container img.adidas {
@@ -134,7 +132,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Oswald', sans-serif;
+    
     
 }
 
@@ -215,8 +213,8 @@ header{
     display:grid;
     /* margin-top: 70px; */
     padding-top: 150px;
-    grid-template-columns: 350px 450px ;
-    grid-template-rows:350px 350px ;
+    grid-template-columns: 450px 550px ;
+    grid-template-rows:550px 550px ;
     grid-template-areas:"sozinha topo"
                         "sozinha baixo";
     justify-content: center;
@@ -248,7 +246,7 @@ header{
     grid-area: baixo;
     background-image: url('gerson&gabi.jpg');
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 150%;
     background-position: center;
     border: 1px solid red; 
     transition: transform 0.3s ease-in-out;
@@ -310,4 +308,133 @@ margin-bottom: 5px;
     font-family: 'Oswald', sans-serif;
     margin-left: 4px;
 } 
+
+/* login----------*/
+.btn-login {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out ;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  }
+  
+  .btn-login:hover {
+    background-color: black;
+    transform: scale(0.98);
+  }
+  
+
+/* menu */
+
+.nav-button {  
+    cursor: pointer;  
+    display: flex;
+    justify-self: left;
+    margin-left: 10px;
+}  
+
+.overlay {  
+    height: 100%;  
+    width: 0;  
+    position: fixed;  
+    z-index: 1;  
+    top: 0;  
+    left: 0;  
+    background-color:black;  
+    overflow-x: hidden;  
+    transition: 0.5s;  
+    padding-top: 60px;
+    border-radius: 10px;  
+}  
+
+.overlay-content {  
+    position: relative;  
+    top: 25%;  
+    text-align: center;  
+}  
+
+.overlay-content a {  
+    padding: 8px;  
+    text-decoration: none;  
+    font-size: 25px;  
+    color: white;  
+    font-family: 'Oswald', sans-serif;
+    display: block;  
+    transition: 0.3s;  
+}  
+
+.overlay-content a:hover {  
+    color: #f1f1f1;  
+}  
+
+.closebtn {  
+    position: absolute;  
+    top: 20px;  
+    right: 45px;  
+    font-size: 60px;  
+    color: white;  
+}  
+
+@media screen and (max-width: 450px) {  
+    .overlay-content a {  
+        font-size: 20px;  
+    }  
+    .closebtn {  
+        font-size: 40px;  
+    }  
+}  
+
+
+/* slider */
+
+#dvSlider{
+	width:600px;
+	height:300px;
+    display: flex;
+    float: left;
+	border:1px solid black;
+	margin:auto
+}
+
+/* carrossel */
+
+.carousel {  
+    display: flex; /* Para alinhar os cards em linha */  
+    overflow: hidden; /* Para ocultar os cards fora do container */  
+    width: 100%; /* Largura total do carrossel */  
+    position: relative; /* Para que os botoes fiquem posicionados em relação a este container */  
+}  
+
+.card {  
+    width: 400px; /* Largura dos cards */  
+    margin: 10px; /* Margem entre os cards */  
+    background-color: #f0f0f0;  
+    padding: 20px;  
+    box-sizing: border-box; /* Para incluir padding e margins no cálculo da largura */  
+    transition: transform 0.5s; /* Transição suave ao mover os cards */  
+}  
+
+#prev {
+    
+    }  
+
+#next {  
+    
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 
