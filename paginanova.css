@@ -380,13 +380,20 @@ margin-bottom: 5px;
 }  
 
 .card {  
-    width: 400px; /* Largura dos cards */  
+    width: 30px; /* Largura dos cards */  
     margin: 10px; /* Margem entre os cards */  
-    background-color: #f0f0f0;  
+    background-color: white;  
     padding: 20px;  
     box-sizing: border-box; /* Para incluir padding e margins no cálculo da largura */  
-    transition: transform 0.5s; /* Transição suave ao mover os cards */  
+    transition: transform 0.5s; /* Transição suave ao mover os cards */
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }  
+
+.card img{
+    border-bottom: 1px solid black;
+}
 
 #prev {
     margin-right: 10px;

@@ -80,13 +80,13 @@ body{
   }
   
   .Face{
-    background: url(5296499_fb_facebook_facebook\ logo_icon.png);
+    background: url('5296499_fb_facebook_facebook\ logo_icon.png');
     background-repeat: no-repeat;
     background-size: 100%;
   }
   
   .Google{
-    background: url(2993685_brand_brands_google_logo_logos_icon.png);
+    background: url('2993685_brand_brands_google_logo_logos_icon.png');
     background-repeat: no-repeat;
     background-size: 100%;
     

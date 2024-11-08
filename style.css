@@ -415,7 +415,7 @@ margin-bottom: 5px;
 }  
 
 .card {  
-    width: 350px; /* Largura dos cards */  
+    width: 30px; /* Largura dos cards */  
     margin: 10px; /* Margem entre os cards */  
     background-color: white;  
     padding: 20px;  
