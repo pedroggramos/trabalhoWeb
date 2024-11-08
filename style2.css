@@ -1,6 +1,3 @@
-
-/* Estilos do body */
-/* Estilos do body */
 body {
     margin: 0;
     width: 100%;
@@ -8,60 +5,20 @@ body {
     cursor: url("remo(1).png"), auto;
 
 }
-
-/* Estilos do #pagina-inicial */
-#pagina-inicial {
-    margin: 0;
-    position: fixed; /* Fixado para cobrir a tela inteira */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    z-index: 2;
-    background: repeating-linear-gradient(
-        0deg,
-        #bd0000,
-        #bd0000 85px,
-        black 70px,  
-        black 175px
-    );
-
-
-
-}
-
-
-
-/* Estilos para a nova página */
-/* Estilos para a nova página */
-#pagina-nova {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-
-    
-}
-
-
 header{
     height: 90px;
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#dc3545 ;
 }
 /* nav{
     justify-content: center;
     display:flex;
     gap:80px;
 } */
-
-.hd-vermelho {
-    background-color: #dc3545;
-    padding: 10px 0;
-    height: 75px;
-}
 
 .hd-preto {
     background-color: #000;
@@ -89,11 +46,25 @@ header{
 
 /* Logo e container adidas */
 .adidas-container {
-    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10%;
 }
 
 .adidas-container img.adidas {
     width: 55px;
+}
+
+.adidas-container img.escudoFlamengoPrincipal{
+    width: 40px;
+}
+
+.barra-central {
+    width: 2px; /* Largura da barra */
+    height: 40px; /* Altura igual às imagens */
+    background-color: black; /* Cor da barra */
+    margin: 0 10px; /* Espaçamento entre a barra e as imagens */
 }
 
 /* Barra de navegação */
@@ -101,6 +72,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 .navegador{
@@ -108,20 +81,27 @@ header{
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
+    
 }
+
+
 
 .navbar-navegador {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
+
+
 
 .navbar-navegador li {
     position: relative;
     margin: 0 15px;
 }
 
+/* Estilos para os links */
 .navbar-navegador li a {
     color: #fff;
     text-transform: uppercase;
@@ -129,9 +109,12 @@ header{
     font-weight: bold;
 }
 
+
+
+
 /* Dropdown */
 .navbar-navegador .lista:hover .lista-menu {
-    display: block;
+    display: inline-block;
 }
 
 .lista-menu {
@@ -154,10 +137,11 @@ header{
     color: #fff;
     text-decoration: none;
     display: block;
+    transition: transform 0.3s ease-in-out;
 }
 
 .lista-menu li a:hover {
-    background-color: #444;
+    transform: scale(110%);
 }
 
 #footer{
@@ -169,8 +153,8 @@ header{
     display:grid;
     /* margin-top: 70px; */
     padding-top: 150px;
-    grid-template-columns: 350px 350px ;
-    grid-template-rows:350px 350px ;
+    grid-template-columns: 450px 550px ;
+    grid-template-rows:550px 550px ;
     grid-template-areas:"sozinha topo"
                         "sozinha baixo";
     justify-content: center;
@@ -180,32 +164,199 @@ header{
 }
 .noticias1{
     grid-area: sozinha;
-    background: url('torcida.jpg');
+    background: url('camisanova.avif');
     background-repeat: no-repeat;
-    background-size: 400%;
+    background-size: 200%;
     background-position: center;
     border: 1px solid red;
+    transition: transform 0.3s ease-in-out;
 }
 .noticias2{
     grid-area: topo;
-    background-image:url('gerson&gabi.jpg');
+    background-image:url('fcfa9378-8aa0-447b-b291-e6894d41d2b4.png');
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 180%;
     background-position: top;
     border: 1px solid red;
-
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: end;
 }
 .noticias3{
     grid-area: baixo;
-    background-image: url('arrascaepedro.jpg');
+    background-image: url('gerson&gabi.jpg');
     background-repeat: no-repeat;
-    background-size: 175%;
+    background-size: 150%;
     background-position: center;
     border: 1px solid red; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .ft-preto{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom:5px;
     margin-top: 150px;
     background-color: #000;
     height:30vh;
+
+}
+
+.noticias1:hover, .noticias2:hover, .noticias3:hover{
+  transform: scale(0.98);
+}
+
+.opacidade{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.noticia2txt {
+    text-align: center;
+     /* Centraliza o conteúdo dentro da div */
+}
+
+.placar {
+    display: flex; /* Usa Flexbox para colocar os itens lado a lado */
+    /* justify-content: center; Centraliza o conteúdo do placar */
+    align-items: center; /* Alinha verticalmente */
+    margin-left: 5px;
+}
+
+#cru{
+margin-bottom: 5px;
+}
+.placar p {
+    margin: 0 10px; /* Espaçamento entre o placar e as imagens */
+    font-size: 30px;
+    color:white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.textocruzeiro {
+    margin-top: 10px; /* Adiciona um pequeno espaço entre o placar e o texto */
+    font-size: 20px; /* Ajuste de tamanho do texto */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 4px;
+} 
+
+/* login----------*/
+.btn-login {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out ;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  }
+  
+  .btn-login:hover {
+    background-color: black;
+    transform: scale(0.98);
+  }
+  
+
+/* menu */
+
+.nav-button {  
+    cursor: pointer;  
+    display: flex;
+    justify-self: left;
+    margin-left: 10px;
+}  
+
+.overlay {  
+    height: 100%;  
+    width: 0;  
+    position: fixed;  
+    z-index: 1;  
+    top: 0;  
+    left: 0;  
+    background-color:black;  
+    overflow-x: hidden;  
+    transition: 0.5s;  
+    padding-top: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;;  
+}  
+
+.overlay-content {  
+    position: relative;  
+    top: 25%;  
+    text-align: center;  
+}  
+
+.overlay-content a {  
+    padding: 8px;  
+    text-decoration: none;  
+    font-size: 25px;  
+    color: white;  
+    font-family: 'Oswald', sans-serif;
+    display: block;  
+    transition: 0.3s;  
+}  
+
+.overlay-content a:hover {  
+    color: #f1f1f1;  
+}  
+
+.closebtn {  
+    position: absolute;  
+    top: 20px;  
+    right: 45px;  
+    font-size: 60px;  
+    color: white;  
+}  
+
+@media screen and (max-width: 450px) {  
+    .overlay-content a {  
+        font-size: 20px;  
+    }  
+    .closebtn {  
+        font-size: 40px;  
+    }  
+}  
+
+
+/* carrossel */
+.card {  
+    width: 805px; /* Largura dos cards */
+    height:202px;  
+    margin: 10px; /* Margem entre os cards */  
+    background-color: #f0f0f0;  
+    padding: 20px;  
+    box-sizing: border-box; /* Para incluir padding e margins no cálculo da largura */  
+    transition: transform 0.5s; /* Transição suave ao mover os cards */  
+    box-shadow: 10px 5px 5px rgb(84, 84, 84);
+    border-radius: 25px;
+    margin-top: 40px;
+}
+.titulos{
+    height:auto;
+    justify-items: center;
+}
+.card-title{
+    font-size: 4rem;
+    font-weight:800;
+    line-height:1.2em;
+    letter-spacing:0.05em;
+    margin-block: 0;
+    background: linear-gradient(3deg, #000000 12.5%, #ff0000 105.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
