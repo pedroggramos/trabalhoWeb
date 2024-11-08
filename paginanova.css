@@ -380,7 +380,7 @@ margin-bottom: 5px;
 }  
 
 .card {  
-    width: 30px; /* Largura dos cards */  
+    width: 400px; /* Largura dos cards */  
     margin: 10px; /* Margem entre os cards */  
     background-color: white;  
     padding: 20px;  
@@ -396,19 +396,22 @@ margin-bottom: 5px;
 }
 
 #prev {
-    margin-right: 10px;
+    margin-right: 30px;
     cursor: pointer;
 }  
 
 #next {  
-    margin-left: 10px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
 .botoes{
+    color: red;
     display: flex;
     justify-content: center;
-    font-size: larger;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 
 
