@@ -1,0 +1,218 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    scrollbar-color: black;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:  rgba(211,211,211,0.3);   
+    border-radius: 20px;   
+    border: 3px solid black;
+  }
+
+  .volta{
+    color: white;
+    font-size: 9pt;
+    text-decoration: none;
+    float: left;
+    margin-left: 20px;
+    width: 90%;
+  }
+  .logo{
+    width: 230px;
+    height: 200px;
+  }
+  
+  .header{
+    display: inline-block;
+    width: 100%;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .containerForm{
+    border-radius: 10px;
+    margin-top: 50px;
+    background:white;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  
+    
+  }
+  
+  .inputs{
+    background-color: rgba(211,211,211,0.3);  
+    margin-left: 30px;
+    width: 740px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .botoesFG{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  
+  .button{
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+  
+  .Face{
+    background: url(5296499_fb_facebook_facebook\ logo_icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .Google{
+    background: url(2993685_brand_brands_google_logo_logos_icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+  }
+  #login{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  
+  #continuar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    width: 610px;
+    height: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border:none;
+    background-color: green;
+  }
+  
+  #recuperar{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    text-align: center;
+  }
+  #cliqueAqui{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-decoration-color:black;
+    color: black;
+  }
+  
+  hr{
+    border-color:rgba(0, 0, 0, 0.3);
+    border-radius: 30%;
+  }
+  
+  footer{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    color:  white;
+    background: black;
+  }
+  
+  
+  @media (min-width:605px) and (max-width:810px){
+    .logo{
+      width: 200px;
+      height: 170px;
+    }
+    .volta{
+      font-size: 7pt;
+    }
+    .containerForm{
+      width: 600px;
+    }
+  
+    .inputs{
+      width: 540px;
+    }
+  
+    .button{
+      width: 15px;
+    }
+  
+    #continuar{
+      font-size: 11pt;
+      width: 410px;
+    }
+  
+    #recuperar{
+      font-size: 10pt;
+    }
+    
+    #cliqueAqui{
+      font-size: 10pt;
+    }
+  
+    footer{
+      font-size: 8pt;
+    }
+  }
+  
+  @media (min-width:0px) and (max-width:605px){
+    .logo{
+      width: 170px;
+      height: 140px;
+    }
+    .volta{
+      font-size: 5pt;
+    }
+    .containerForm{
+      width: 400px;
+    }
+  
+    .inputs{
+      width: 340px;
+    }
+  
+    .button{
+      width: 10px;
+    }
+  
+    #continuar{
+      font-size: 11pt;
+      width: 210px;
+    }
+  
+    #recuperar{
+      font-size: 8pt;
+    }
+  
+    #cliqueAqui{
+      font-size: 8pt;
+    }
+  
+    footer{
+      font-size: 6pt;
+    }
+  }
+  
