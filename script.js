@@ -24,11 +24,11 @@ function closeNav() {
 
 // carrossel
 
-const cards = document.querySelectorAll('.card');  
+const cards = document.querySelectorAll('.match-card');  
 let currentIndex = 0;  
 
 function updateCarousel() {  
-    const offset = -currentIndex * 220; // 220px é a largura do card + margin  
+    const offset = -currentIndex * 500; // 220px é a largura do card + margin  
     cards.forEach(card => {  
         card.style.transform = `translateX(${offset}px)`;  
     });  

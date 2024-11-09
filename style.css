@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Oswald:wght@400;600&display=swap');
 
 /* Estilos do body */
 /* Estilos do body */
@@ -6,6 +7,23 @@ body {
     width: 100%;
     transition: background 0.5s ease-in-out;
     cursor: url("remo(1).png"), auto;
+    overflow-x: hidden;   
+}
+
+.fonte{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.ultimas{
+    margin-top: 50px;
+}
+
+.loc{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
@@ -212,7 +230,7 @@ header{
 #janela{
     display:grid;
     /* margin-top: 70px; */
-    padding-top: 150px;
+    padding-top: 30px;
     grid-template-columns: 450px 550px ;
     grid-template-rows:550px 550px ;
     grid-template-areas:"sozinha topo"
@@ -311,6 +329,7 @@ margin-bottom: 5px;
 
 /* login----------*/
 .btn-login {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -363,11 +382,12 @@ margin-bottom: 5px;
 }  
 
 .overlay-content a {  
+    font-family: 'Montserrat', sans-serif;
+
     padding: 8px;  
     text-decoration: none;  
     font-size: 25px;  
-    color: white;  
-    font-family: 'Oswald', sans-serif;
+    color: #dc3545;  
     display: block;  
     transition: 0.3s;  
 }  
@@ -381,8 +401,13 @@ margin-bottom: 5px;
     top: 20px;  
     right: 45px;  
     font-size: 60px;  
-    color: white;  
+    color: #dc3545;  
+    transition: 0.3s;  
 }  
+
+.closebtn:hover{
+    color: #f1f1f1;
+}
 
 @media screen and (max-width: 450px) {  
     .overlay-content a {  
@@ -410,14 +435,14 @@ margin-bottom: 5px;
 .carousel {  
     display: flex; /* Para alinhar os cards em linha */  
     overflow: hidden; /* Para ocultar os cards fora do container */  
-    width: 100%; /* Largura total do carrossel */  
+    width: 200%; /* Largura total do carrossel */  
     position: relative; /* Para que os botoes fiquem posicionados em relação a este container */  
 }  
 
 .card {  
     width: 400px; /* Largura dos cards */  
     margin: 10px; /* Margem entre os cards */  
-    background-color: white;  
+    background-color: rgb(204, 40, 40);  
     padding: 20px;  
     box-sizing: border-box; /* Para incluir padding e margins no cálculo da largura */  
     transition: transform 0.5s; /* Transição suave ao mover os cards */
@@ -431,12 +456,12 @@ margin-bottom: 5px;
 }
 
 #prev {
-    margin-right: 30px;
+    margin-right: 300px;
     cursor: pointer;
 }  
 
 #next {  
-    margin-left: 30px;
+    margin-left: 300px;
     cursor: pointer;
 }
 
@@ -445,7 +470,8 @@ margin-bottom: 5px;
     justify-content: center;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
-    font-weight: bold;
+    width: 100%;
+    color: #dc3545;
 }
 
 
@@ -571,3 +597,106 @@ h1 {
 
 
 
+
+
+
+
+
+/* testando */
+
+.match-card {
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin: 16px;
+    transition: transform 0.5s; /* Transição suave ao mover os cards */
+
+}
+
+.card-header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dc3545; /* Cor de fundo escura */
+    padding: 16px;
+    color: #ffffff;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-logo {
+    width: 40px;
+    height: auto;
+}
+
+.team-logo-mg {
+    width: 35px;
+    height: auto;
+}
+
+
+.team-name {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 4px;
+}
+
+.league-logo {
+    width: 30px; /* Define o tamanho da logo do campeonato */
+    height: auto;
+}
+
+.card-body {
+    padding: 16px;
+    text-align: center;
+}
+
+.league-info {
+    font-size: 12px;
+    color: #777;
+}
+
+.league-name {
+    font-size: 18px;
+    color: #dc3545;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.matchday {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.date-location {
+    font-size: 14px;
+    color: #666;
+}
+
+.date,
+.location {
+    margin: 8px 0;
+}
+
+.card-footer {
+    padding: 8px 16px;
+    background-color: #f9f9f9;
+    text-align: right;
+}
+
+.more-link {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
