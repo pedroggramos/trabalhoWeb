@@ -449,6 +449,125 @@ margin-bottom: 5px;
 }
 
 
+/* ------------------------ */
+.placar {
+    width: 90%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+h1 {
+    color: #bd0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button.active {
+    background-color: #5c59f4;
+    color: #fff;
+}
+
+.year-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#year-slider {
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#year-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+}
+
+#year-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #5c59f4;
+    cursor: pointer;
+}
+#year {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.achievement .icon {
+    font-size: 24px;
+}
+
+.achievement .count {
+    font-weight: bold;
+    color: #5c59f4;
+}
+#achievements-list p {
+    color: red; /* Cor visível para teste */
+    font-weight: bold;
+}
+
 
 
 

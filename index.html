@@ -141,6 +141,27 @@
     <a id="prev">< </a><p></p> 
     <a id="next"> ></a>
     </div>
+    <div class="placar">
+        <div class="conteudo">
+            <div class="image">
+                <img src="trophies.jpg" alt="Imagem dos troféus">
+            </div>
+            <div class="achievements-section">
+                <div class="tabs">
+                    <button class="active">Futebol</button>
+                    <button>Basquete</button>
+                </div>
+                <div class="year-selector">
+                    <input type="range" id="year-slider" min="1980" max="2024" value="2007" oninput="updateYear(this.value)">
+                    <span id="year">2007</span>
+                </div>
+                <!-- Lista de troféus logo abaixo do seletor de ano -->
+                <div class="achievements" id="achievements-list">
+                    <!-- Troféus serão adicionados aqui conforme o ano -->
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="container3">
