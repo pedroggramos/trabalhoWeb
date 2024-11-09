@@ -22,12 +22,18 @@ body {
   }
   
   .volta {
-    color: white;
-    font-size: 9pt;
-    text-decoration: none;
-    float: left;
-    margin-left: 20px;
-    width: 90%;
+      padding: 10px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #dc354639;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: left;
+      margin-left: 10px;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+      text-decoration: none;
   }
   
   .logo {
@@ -46,6 +52,9 @@ body {
     width: 100%;
     height: auto;
     font-family: sans-serif;
+    background-image:url('torcida2.png') ;
+    background-repeat: no-repeat;
+    
   }
   
   .containerForm {
@@ -148,7 +157,7 @@ body {
     display: inline-block;
     text-align: center;
     margin-top: 100px;
-    height: 200px;
+    height: 100px;
     width: 100%;
     color:  white;
     background: black;
