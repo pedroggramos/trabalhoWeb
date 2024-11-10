@@ -5,7 +5,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     overflow: auto;
     scrollbar-color: black;
-    background-image:url('torcida2.png') ;
+    background-image:url('imagens/torcida2.png') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -154,16 +154,34 @@ body {
     border-radius: 30%;
   }
   
-  
-  footer {
-    display: inline-block;
-    text-align: center;
-    margin-top: 100px;
-    height: 100px;
-    width: 100%;
-    color:  white;
-    background: black;
-  }
+  .ft-preto{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom:5px;
+    margin-top: 150px;
+    background-color: #000;
+    height: auto;
+    flex-wrap:wrap;
+}
+.ft-preto span{
+    margin-top: 30px;
+    font-size:20px;
+    color:#ff0019;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.ft-preto ul{
+    list-style-type:none;
+    display:flex;
+    padding:0;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.ft-preto ul li{
+    margin-right:10px;
+}
   
   @media (min-width:605px) and (max-width:810px){
     .logo{

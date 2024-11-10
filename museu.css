@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Oswald:wght@400;600&display=swap');
+
+
+body, #pagina-inicial {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#dc3545 ;
+}
+.esq{
+    float: left;
+}
+.hd-preto {
+    background-color: #000;
+    padding: 15px 0;
+    height:20px;
+}
+
+.header-social-icons {
+    gap: 15px;
+    color: #fff;
+    float:right;
+    display: inline-flex;
+    margin-top: -0.3%;
+    margin-right:10px;
+}
+
+.adidas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+ }
+ 
+ .adidas-container img.adidas {
+     width: 55px;
+ }
+ 
+ .adidas-container img.escudoFlamengoPrincipal{
+     width: 40px;
+ }
+ 
+ .barra-central {
+     width: 2px; /* Largura da barra */
+     height: 40px; /* Altura igual às imagens */
+     background-color: black; /* Cor da barra */
+     margin: 0 10px; /* Espaçamento entre a barra e as imagens */
+ }
+
+ .btn-login {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out ;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    text-decoration: none;
+  }
+  
+  .btn-login:hover {
+    background-color: black;
+    transform: scale(0.98);
+  }
+  
+
+/* menu */
+
+.nav-button {  
+    cursor: pointer;  
+    display: flex;
+    justify-self: left;
+    margin-left: 10px;
+}  
+
+.overlay {  
+    height: 100%;  
+    width: 0;  
+    position: fixed;  
+    z-index: 1;  
+    top: 0;  
+    left: 0;  
+    background-color:black;  
+    overflow-x: hidden;  
+    transition: 0.5s;  
+    padding-top: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;;  
+}  
+
+.overlay-content {  
+    position: relative;  
+    top: 25%;  
+    text-align: center;  
+}  
+
+.overlay-content a {  
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 8px;  
+    text-decoration: none;  
+    font-size: 25px;  
+    color: #dc3545;  
+    display: block;  
+    transition: 0.3s;  
+}  
+
+.overlay-content a:hover {  
+    color: #f1f1f1;  
+}  
+
+.closebtn {  
+    position: absolute;  
+    top: 20px;  
+    right: 45px;  
+    font-size: 60px;  
+    color: #dc3545;  
+    transition: 0.3s;  
+}  
+
+.closebtn:hover{
+    color: #f1f1f1;
+}
+
+@media screen and (max-width: 450px) {  
+    .overlay-content a {  
+        font-size: 20px;  
+    }  
+    .closebtn {  
+        font-size: 40px;  
+    }  
+}  
+
+section {
+    margin-bottom: 50px;
+}
+
+#historia h2, #idolos h2, #jogos-historicos h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #a00000;
+    margin-bottom: 15px;
+}
+
+#historia h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.historia-conteudo {
+    display: flex;
+    align-items: center;
+    margin-left:15px ;
+}
+
+.historia-conteudo .texto {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.historia-conteudo .imagem {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.historia-conteudo .imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#jogos-historicos {
+    text-align: center;
+    margin: 20px;
+}
+
+#jogos-historicos h3 {
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.card-flip {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card-flip.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.um {
+    background-image:url('imagens/mundialhistorico.jpg');
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center;
+}
+
+.dois{
+    background-image: url('imagens/2009historico.webp');
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tres{
+    background-image: url('imagens/flamengoxsantoshistorico.png');
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quatro{
+    background-image: url('imagens/2013historico.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cinco{
+    background-image: url('imagens/2019historico.jpeg');
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.seis{
+    background-image: url('imagens/flamengoxvasco.jpg');
+    background-size: 200%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.card-back {
+    background-color:  #dc3545;
+    transform: rotateY(180deg);
+}
+
+#casas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se ajustem para a linha seguinte, caso necessário */ /* Espaçamento entre os cards */
+    gap: 10px; /* Espaçamento entre os cards */
+    justify-content: space-between;
+}
+
+.houses {
+    position: relative;
+    overflow: hidden;
+    width: 17px;
+    height: 350px;
+    background-position: center;
+    border-radius: 25px;
+    margin: 5px;
+    box-shadow: 0 0 10px -1px rgba(255, 255, 255, 0.65);
+    min-width: 100px;
+    background-size: auto 120%;
+    transition: 0.5s ease;
+    display: flex;
+}
+
+
+
+.houses:hover {
+    min-width: 250px;
+    background-size: auto 100%;
+    border-radius: 10px;
+}
+
+.houses a {
+    text-decoration: none; /* Remove underline */
+    
+}
+
+.house-inner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.houses::before {
+    content: '';
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+}
+
+.houses:hover::before {
+    background: none;
+}
+
+.nomeHouse {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    transform: rotate(-90deg);
+    font-size: 20pt;
+    letter-spacing: 2px;
+    max-width: 100%;
+    margin-bottom: 120%;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    visibility: hidden; /* Hide the text by default */
+    opacity: 0;
+    position: absolute;
+    bottom: 20px; /* Move text closer to the bottom */
+    left: 10px;
+}
+
+.houses:hover .nomeHouse {
+    transform: rotate(0deg);
+    margin-bottom: 3%;
+    margin-left: 20%;
+    visibility: visible; /* Make the text visible on hover */
+    opacity: 1; /* Fade in the text */
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #FFF;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s;
+    font-size: 12pt; /* Reduce font size */
+    text-align: center; /* Center text */
+    box-sizing: border-box;
+}
+
+.houses:hover .legenda {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.ft-preto{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom:5px;
+    margin-top: 150px;
+    background-color: #000;
+    height: auto;
+    flex-wrap:wrap;
+}
+.ft-preto span{
+    margin-top: 30px;
+    font-size:20px;
+    color:#ff0019;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.ft-preto ul{
+    list-style-type:none;
+    display:flex;
+    padding:0;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.ft-preto ul li{
+    margin-right:10px;
+}

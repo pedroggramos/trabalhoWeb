@@ -1,7 +1,7 @@
 // menu
 
 function openNav() {  
-    document.getElementById("overlay").style.width = "15%";  
+    document.getElementById("overlay").style.width = "25%";  
 }  
 
 function closeNav() {  

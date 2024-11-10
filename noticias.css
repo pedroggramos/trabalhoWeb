@@ -187,7 +187,7 @@ header{
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 20px;
-    width: 50%;
+    width: 100%;
 }
 
 .conteudo-destaque h2 {
@@ -244,7 +244,7 @@ header{
     padding-bottom:5px;
     margin-top: 150px;
     background-color: #000;
-    height: 60vh;
+    height: auto;
     flex-wrap:wrap;
 }
 .ft-preto span{

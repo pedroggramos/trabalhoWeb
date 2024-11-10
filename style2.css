@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Oswald:wght@400;600&display=swap');
 
-
-body {
+body, #pagina-inicial {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    width: 100%;
-    transition: background 0.5s ease-in-out;
-    cursor: url("remo(1).png"), auto;
-
+    padding: 0;
 }
+
 header{
     height: 90px;
     width: 100%;
@@ -17,192 +15,48 @@ header{
     align-items: center;
     background-color:#dc3545 ;
 }
-/* nav{
-    justify-content: center;
-    display:flex;
-    gap:80px;
-} */
-
+.esq{
+    float: left;
+}
 .hd-preto {
     background-color: #000;
     padding: 15px 0;
     height:20px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Estilos para redes sociais */
 .header-social-icons {
-    gap: 10px;
+    gap: 15px;
     color: #fff;
-    display: flex;
     float:right;
-    margin-bottom: 5px;
+    display: inline-flex;
+    margin-top: -0.3%;
     margin-right:10px;
 }
 
-.header-social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-/* Logo e container adidas */
 .adidas-container {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-left: 10%;
-}
-
-.adidas-container img.adidas {
-    width: 55px;
-}
-
-.adidas-container img.escudoFlamengoPrincipal{
-    width: 40px;
-}
-
-.barra-central {
-    width: 2px; /* Largura da barra */
-    height: 40px; /* Altura igual às imagens */
-    background-color: black; /* Cor da barra */
-    margin: 0 10px; /* Espaçamento entre a barra e as imagens */
-}
-
-/* Barra de navegação */
-.navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
-    
-}
-
-.navegador{
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    
-}
-
-
-
-.navbar-navegador {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-}
-
-
-
-.navbar-navegador li {
-    position: relative;
-    margin: 0 15px;
-}
-
-/* Estilos para os links */
-.navbar-navegador li a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-
-
-/* Dropdown */
-.navbar-navegador .lista:hover .lista-menu {
-    display: inline-block;
-}
-
-.lista-menu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
-    list-style: none;
-}
-
-.lista-menu li {
-    padding: 5px 0;
-}
-
-.lista-menu li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    transition: transform 0.3s ease-in-out;
-}
-
-.lista-menu li a:hover {
-    transform: scale(110%);
-}
-
-#footer{
-    background-color:black;
-    height: 90px;
-    width: 100%;
-}
-
-
-.ft-preto{
-    display: flex;
     justify-content: center;
-    align-items:center;
-    padding-bottom:5px;
-    margin-top: 150px;
-    background-color: #000;
-    height: 60vh;
-    flex-wrap:wrap;
-}
-.ft-preto span{
-    font-size:20px;
-    color:#ff0019;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.ft-preto .partner{
-    margin:12px;
-}
-.ft-preto ul{
-    list-style-type:none;
-    display:flex;
-    padding:0;
-    flex-wrap:wrap;
-    gap:10px;
-}
-.ft-preto ul li{
-    margin-right:10px;
-}
+    margin-left: 10%;
+ }
+ 
+ .adidas-container img.adidas {
+     width: 55px;
+ }
+ 
+ .adidas-container img.escudoFlamengoPrincipal{
+     width: 40px;
+ }
+ 
+ .barra-central {
+     width: 2px; /* Largura da barra */
+     height: 40px; /* Altura igual às imagens */
+     background-color: black; /* Cor da barra */
+     margin: 0 10px; /* Espaçamento entre a barra e as imagens */
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* login----------*/
-.btn-login {
+ .btn-login {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -215,6 +69,7 @@ header{
     margin-right: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease-in-out ;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    text-decoration: none;
   }
   
   .btn-login:hover {
@@ -254,11 +109,12 @@ header{
 }  
 
 .overlay-content a {  
+    font-family: 'Montserrat', sans-serif;
+
     padding: 8px;  
     text-decoration: none;  
     font-size: 25px;  
-    color: white;  
-    font-family: 'Oswald', sans-serif;
+    color: #dc3545;  
     display: block;  
     transition: 0.3s;  
 }  
@@ -272,8 +128,13 @@ header{
     top: 20px;  
     right: 45px;  
     font-size: 60px;  
-    color: white;  
+    color: #dc3545;  
+    transition: 0.3s;  
 }  
+
+.closebtn:hover{
+    color: #f1f1f1;
+}
 
 @media screen and (max-width: 450px) {  
     .overlay-content a {  
@@ -283,7 +144,6 @@ header{
         font-size: 40px;  
     }  
 }  
-
 
 /* carrossel */
 .card {  
@@ -456,4 +316,31 @@ header{
   }
 
 
-  
+  .ft-preto{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom:5px;
+    margin-top: 150px;
+    background-color: #000;
+    height: auto;
+    flex-wrap:wrap;
+}
+.ft-preto span{
+    margin-top: 30px;
+    font-size:20px;
+    color:#ff0019;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.ft-preto ul{
+    list-style-type:none;
+    display:flex;
+    padding:0;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.ft-preto ul li{
+    margin-right:10px;
+}
