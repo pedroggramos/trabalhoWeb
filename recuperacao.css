@@ -5,7 +5,7 @@ body{
     background: rgba(0, 0, 0, 0.8);
     overflow: auto;
     scrollbar-color: black;
-    background-image:url('torcida2.png');
+    background-image:url('imagens/torcida2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
