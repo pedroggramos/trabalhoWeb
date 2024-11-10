@@ -26,6 +26,7 @@ header{
 .hd-preto {
     background-color: #000;
     padding: 15px 0;
+    height:20px;
 }
 
 .container {
@@ -36,9 +37,12 @@ header{
 
 /* Estilos para redes sociais */
 .header-social-icons {
-    display: flex;
     gap: 10px;
     color: #fff;
+    display: flex;
+    float:right;
+    margin-bottom: 5px;
+    margin-right:10px;
 }
 
 .header-social-icons a {
@@ -157,13 +161,45 @@ header{
 .ft-preto{
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items:center;
     padding-bottom:5px;
     margin-top: 150px;
     background-color: #000;
-    height:30vh;
-
+    height: 60vh;
+    flex-wrap:wrap;
 }
+.ft-preto span{
+    font-size:20px;
+    color:#ff0019;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ft-preto .partner{
+    margin:12px;
+}
+.ft-preto ul{
+    list-style-type:none;
+    display:flex;
+    padding:0;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.ft-preto ul li{
+    margin-right:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* login----------*/
 .btn-login {
@@ -398,11 +434,6 @@ header{
 .card-image img:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
 .btn-login {
     padding: 10px 20px;
     font-size: 16px;
