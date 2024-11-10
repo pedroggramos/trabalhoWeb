@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Oswald:wght@400;600&display=swap');
 
 /* Estilos do body */
 /* Estilos do body */
@@ -6,10 +7,46 @@ body {
     width: 100%;
     transition: background 0.5s ease-in-out;
     cursor: url("remo(1).png"), auto;
+    overflow-x: hidden;   
+}
+
+.fonte{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.ultimas{
+    margin-top: 50px;
+}
+
+.loc{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
 /* Estilos do #pagina-inicial */
+#pagina-inicial {
+    margin: 0;
+    position: fixed; /* Fixado para cobrir a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    background: repeating-linear-gradient(
+        0deg,
+        #bd0000,
+        #bd0000 85px,
+        black 70px,  
+        black 175px
+    );
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
 
 
 .logo {
@@ -28,6 +65,22 @@ body {
     /* cursor: pointer; */
 }
 
+
+
+/* Estilos para a nova página */
+/* Estilos para a nova página */
+#pagina-nova {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    opacity: 0; /* Iniciar invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição de opacidade */
+    overflow: auto;
+    
+}
 
 
 header{
@@ -59,11 +112,11 @@ header{
 
 /* Estilos para redes sociais */
 .header-social-icons {
-    gap: 10px;
+    gap: 15px;
     color: #fff;
-    display: flex;
     float:right;
-    margin-bottom: 5px;
+    display: inline-flex;
+    margin-top: -0.3%;
     margin-right:10px;
 }
 
@@ -72,6 +125,7 @@ header{
     text-decoration: none;
     font-size: 14px;
 }
+
 
 /* Logo e container adidas */
 .adidas-container {
@@ -178,73 +232,72 @@ header{
     height: 90px;
     width: 100%;
 }
-#janela{
-    display:grid;
-    /* margin-top: 70px; */
-    padding-top: 150px;
-    grid-template-columns: 450px 550px ;
-    grid-template-rows:550px 550px ;
-    grid-template-areas:"sozinha topo"
-                        "sozinha baixo";
+#janela {
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: 450px 550px;
+    grid-template-rows: 550px 550px;
+    grid-template-areas: "sozinha topo" "sozinha baixo";
     justify-content: center;
-    gap:20px;
+    gap: 20px;
     border-radius: 15%;
-    padding-bottom:100px;
+    padding-bottom: 100px;
 }
-.noticias1{
+
+.noticias1, .noticias2, .noticias3 {
+    position: relative;
+    border: 1px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.noticias1 {
     grid-area: sozinha;
-    background: url('camisanova.avif');
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position: center;
-    border: 1px solid red;
-    transition: transform 0.3s ease-in-out;
+    background: url('camisanova.avif') center / 200% no-repeat;
 }
-.noticias2{
+
+.noticias2 {
     grid-area: topo;
-    background-image:url('fcfa9378-8aa0-447b-b291-e6894d41d2b4.png');
-    background-repeat: no-repeat;
-    background-size: 180%;
-    background-position: top;
-    border: 1px solid red;
-    transition: transform 0.3s ease-in-out;
+    background: url('david.jpg') right / 170% no-repeat;
     display: flex;
     align-items: end;
 }
-.noticias3{
+
+.noticias3 {
     grid-area: baixo;
-    background-image: url('gerson&gabi.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: center;
-    border: 1px solid red; 
-    transition: transform 0.3s ease-in-out;
+    background: url('gerson&gabi.jpg') center / 150% no-repeat;
 }
 
-.ft-preto{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom:5px;
-    margin-top: 150px;
-    background-color: #000;
-    height:30vh;
-
+.noticias1:hover, .noticias2:hover, .noticias3:hover {
+    transform: scale(0.98);
 }
 
-.noticias1:hover, .noticias2:hover, .noticias3:hover{
-  transform: scale(0.98);
+
+/* Classe para texto sobreposto nas notícias */
+.texto-noticia {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    border-radius: 5px;
 }
 
-.opacidade{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    
+/* Exibir o texto no hover */
+.noticias1:hover .texto-noticia,
+.noticias2:hover .texto-noticia,
+.noticias3:hover .texto-noticia {
+    opacity: 1;
 }
+
 
 .noticia2txt {
     text-align: center;
@@ -278,8 +331,39 @@ margin-bottom: 5px;
     margin-left: 4px;
 } 
 
+
+
+.noticia2txt {
+    text-align: center;
+}
+
+.placar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.placar p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.textocruzeiro {
+    font-size: 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+
 /* login----------*/
 .btn-login {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -332,11 +416,12 @@ margin-bottom: 5px;
 }  
 
 .overlay-content a {  
+    font-family: 'Montserrat', sans-serif;
+
     padding: 8px;  
     text-decoration: none;  
     font-size: 25px;  
-    color: white;  
-    font-family: 'Oswald', sans-serif;
+    color: #dc3545;  
     display: block;  
     transition: 0.3s;  
 }  
@@ -350,8 +435,13 @@ margin-bottom: 5px;
     top: 20px;  
     right: 45px;  
     font-size: 60px;  
-    color: white;  
+    color: #dc3545;  
+    transition: 0.3s;  
 }  
+
+.closebtn:hover{
+    color: #f1f1f1;
+}
 
 @media screen and (max-width: 450px) {  
     .overlay-content a {  
@@ -361,6 +451,7 @@ margin-bottom: 5px;
         font-size: 40px;  
     }  
 }  
+
 
 
 /* slider */
@@ -379,14 +470,14 @@ margin-bottom: 5px;
 .carousel {  
     display: flex; /* Para alinhar os cards em linha */  
     overflow: hidden; /* Para ocultar os cards fora do container */  
-    width: 100%; /* Largura total do carrossel */  
+    width: 200%; /* Largura total do carrossel */  
     position: relative; /* Para que os botoes fiquem posicionados em relação a este container */  
 }  
 
 .card {  
     width: 400px; /* Largura dos cards */  
     margin: 10px; /* Margem entre os cards */  
-    background-color: white;  
+    background-color: rgb(204, 40, 40);  
     padding: 20px;  
     box-sizing: border-box; /* Para incluir padding e margins no cálculo da largura */  
     transition: transform 0.5s; /* Transição suave ao mover os cards */
@@ -400,25 +491,250 @@ margin-bottom: 5px;
 }
 
 #prev {
-    margin-right: 30px;
+    margin-right: 300px;
     cursor: pointer;
 }  
 
 #next {  
-    margin-left: 30px;
+    margin-left: 300px;
     cursor: pointer;
 }
 
 .botoes{
-    color: red;
     display: flex;
     justify-content: center;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
+    width: 100%;
+    color: #dc3545;
+}
+
+
+/* ------------------------ */
+.placar {
+    width: 90%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+h1 {
+    color: #bd0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button.active {
+    background-color: #5c59f4;
+    color: #fff;
+}
+
+.year-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#year-slider {
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#year-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff0000;
+    cursor: pointer;
+}
+
+#year-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #5c59f4;
+    cursor: pointer;
+}
+#year {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.achievement .icon {
+    font-size: 24px;
+}
+
+.achievement .count {
+    font-weight: bold;
+    color: #5c59f4;
+}
+#achievements-list p {
+    color: red; /* Cor visível para teste */
     font-weight: bold;
 }
 
 
+
+
+
+
+
+
+
+/* testando */
+
+.match-card {
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin: 16px;
+    transition: transform 0.5s; /* Transição suave ao mover os cards */
+
+}
+
+.card-header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dc3545; /* Cor de fundo escura */
+    padding: 16px;
+    color: #ffffff;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-logo {
+    width: 40px;
+    height: auto;
+}
+
+.team-logo-mg {
+    width: 35px;
+    height: auto;
+}
+
+
+.team-name {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 4px;
+}
+
+.league-logo {
+    width: 30px; /* Define o tamanho da logo do campeonato */
+    height: auto;
+}
+
+.card-body {
+    padding: 16px;
+    text-align: center;
+}
+
+.league-info {
+    font-size: 12px;
+    color: #777;
+}
+
+.league-name {
+    font-size: 18px;
+    color: #dc3545;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.matchday {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.date-location {
+    font-size: 14px;
+    color: #666;
+}
+
+.date,
+.location {
+    margin: 8px 0;
+}
+
+.card-footer {
+    padding: 8px 16px;
+    background-color: #f9f9f9;
+    text-align: right;
+}
+
+.more-link {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
 .ft-preto{
     display: flex;
     justify-content: center;
@@ -430,13 +746,13 @@ margin-bottom: 5px;
     flex-wrap:wrap;
 }
 .ft-preto span{
+    margin-top: 30px;
     font-size:20px;
     color:#ff0019;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-.ft-preto .partner{
-    margin:12px;
-}
+
+
 .ft-preto ul{
     list-style-type:none;
     display:flex;
@@ -447,5 +763,3 @@ margin-bottom: 5px;
 .ft-preto ul li{
     margin-right:10px;
 }
-
-

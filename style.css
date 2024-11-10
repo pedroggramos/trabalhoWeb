@@ -114,9 +114,9 @@ header{
 .header-social-icons {
     gap: 15px;
     color: #fff;
-    display: flex;
     float:right;
-    margin-bottom: 5px;
+    display: inline-flex;
+    margin-top: -0.3%;
     margin-right:10px;
 }
 
@@ -232,73 +232,72 @@ header{
     height: 90px;
     width: 100%;
 }
-#janela{
-    display:grid;
-    /* margin-top: 70px; */
+#janela {
+    display: grid;
     padding-top: 30px;
-    grid-template-columns: 450px 550px ;
-    grid-template-rows:550px 550px ;
-    grid-template-areas:"sozinha topo"
-                        "sozinha baixo";
+    grid-template-columns: 450px 550px;
+    grid-template-rows: 550px 550px;
+    grid-template-areas: "sozinha topo" "sozinha baixo";
     justify-content: center;
-    gap:20px;
+    gap: 20px;
     border-radius: 15%;
-    padding-bottom:100px;
+    padding-bottom: 100px;
 }
-.noticias1{
+
+.noticias1, .noticias2, .noticias3 {
+    position: relative;
+    border: 1px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.noticias1 {
     grid-area: sozinha;
-    background: url('camisanova.avif');
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position: center;
-    border: 1px solid red;
-    transition: transform 0.3s ease-in-out;
+    background: url('camisanova.avif') center / 200% no-repeat;
 }
-.noticias2{
+
+.noticias2 {
     grid-area: topo;
-    background-image:url('fcfa9378-8aa0-447b-b291-e6894d41d2b4.png');
-    background-repeat: no-repeat;
-    background-size: 180%;
-    background-position: top;
-    border: 1px solid red;
-    transition: transform 0.3s ease-in-out;
+    background: url('david.jpg') top / 180% no-repeat;
     display: flex;
     align-items: end;
 }
-.noticias3{
+
+.noticias3 {
     grid-area: baixo;
-    background-image: url('gerson&gabi.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: center;
-    border: 1px solid red; 
-    transition: transform 0.3s ease-in-out;
+    background: url('gerson&gabi.jpg') center / 150% no-repeat;
 }
 
-.ft-preto{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom:5px;
-    margin-top: 150px;
-    background-color: #000;
-    height:30vh;
-
+.noticias1:hover, .noticias2:hover, .noticias3:hover {
+    transform: scale(0.98);
 }
 
-.noticias1:hover, .noticias2:hover, .noticias3:hover{
-  transform: scale(0.98);
+
+/* Classe para texto sobreposto nas notícias */
+.texto-noticia {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    border-radius: 5px;
 }
 
-.opacidade{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    
+/* Exibir o texto no hover */
+.noticias1:hover .texto-noticia,
+.noticias2:hover .texto-noticia,
+.noticias3:hover .texto-noticia {
+    opacity: 1;
 }
+
 
 .noticia2txt {
     text-align: center;
@@ -331,6 +330,35 @@ margin-bottom: 5px;
     font-family: 'Oswald', sans-serif;
     margin-left: 4px;
 } 
+
+
+.noticia2txt {
+    text-align: center;
+}
+
+.placar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.placar p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.textocruzeiro {
+    font-size: 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
 
 /* login----------*/
 .btn-login {
@@ -716,13 +744,13 @@ h1 {
     flex-wrap:wrap;
 }
 .ft-preto span{
+    margin-top: 30px;
     font-size:20px;
     color:#ff0019;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-.ft-preto .partner{
-    margin:12px;
-}
+
+
 .ft-preto ul{
     list-style-type:none;
     display:flex;
