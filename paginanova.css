@@ -972,4 +972,12 @@ h1 {
         .btn-login {
             font-size: 12px;
         }
+
+        .texto-noticia {
+            font-size: 10px;
+           }
+   
+           .textocruzeiro{
+               font-size: 10px;
+           }
   }

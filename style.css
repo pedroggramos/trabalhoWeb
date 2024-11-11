@@ -260,14 +260,14 @@ header{
 
 .noticias2 {
     grid-area: topo;
-    background: url('imagens/david.jpg') top / 180% no-repeat;
+    background: url('imagens/campeaocdb2024.jpg') right / 150% no-repeat;
     display: flex;
     align-items: end;
 }
 
 .noticias3 {
     grid-area: baixo;
-    background: url('imagens/gerson&gabi.jpg') center / 150% no-repeat;
+    background: url('imagens/david.jpg') center / 170% no-repeat;
 }
 
 .noticias1:hover, .noticias2:hover, .noticias3:hover {
@@ -969,5 +969,13 @@ h1 {
 
         .btn-login {
             font-size: 12px;
+        }
+
+        .texto-noticia {
+         font-size: 10px;
+        }
+
+        .textocruzeiro{
+            font-size: 10px;
         }
   }
