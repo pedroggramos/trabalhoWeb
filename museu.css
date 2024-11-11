@@ -421,3 +421,105 @@ section {
 .ft-preto ul li{
     margin-right:10px;
 }
+
+@media (min-width: 871px) and (max-width: 1193px) {
+    .houses:hover {
+        min-width: 150px;
+        background-size: auto 100%;
+        border-radius: 10px;
+    }
+
+    .nomeHouse {
+        font-size: 20px;
+    }
+
+  }
+  
+  @media (min-width: 675px) and (max-width: 870px) {
+    .houses:hover {
+        min-width: 150px;
+        background-size: auto 100%;
+        border-radius: 10px;
+    }
+
+    .nomeHouse {
+        font-size: 20px;
+    }
+
+
+    
+    .btn-login {
+       
+        font-size: 12px;
+       
+      }
+  }
+  
+  @media (min-width: 459px) and (max-width: 674px) {
+ 
+    .card-flip {
+        perspective: 100px;
+        width: 100px;
+        height: 150px;
+        font-size: 6px;
+    }
+    #casas {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os cards se ajustem para a linha seguinte, caso necessário */ /* Espaçamento entre os cards */
+        gap: 10px; /* Espaçamento entre os cards */
+        justify-content: space-between;
+    }
+    .houses:hover {
+        min-width: 150px;
+        background-size: auto 100%;
+        border-radius: 10px;
+    }
+
+    .nomeHouse {
+        font-size: 20px;
+    }
+
+    
+    .btn-login {
+       
+        font-size: 12px;
+       
+      }
+  }
+  
+  @media (min-width: 0px) and (max-width: 458px) {
+    
+    .card-flip {
+        perspective: 100px;
+        width: 100px;
+        height: 150px;
+        font-size: 6px;
+    }
+    #casas {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os cards se ajustem para a linha seguinte, caso necessário */ /* Espaçamento entre os cards */
+        gap: 10px; /* Espaçamento entre os cards */
+        justify-content: space-between;
+    }
+    .houses:hover {
+        min-width: 150px;
+        background-size: auto 100%;
+        border-radius: 10px;
+    }
+    .historia-conteudo .texto {
+        flex: 1;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .nomeHouse {
+        font-size: 20px;
+    }
+
+    .btn-login {
+       
+        font-size: 12px;
+       
+      }
+   
+  }

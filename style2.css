@@ -345,3 +345,143 @@ header{
 .ft-preto ul li{
     margin-right:10px;
 }
+
+@media (min-width: 871px) and (max-width: 1193px) {
+
+
+}
+  
+  @media (min-width: 675px) and (max-width: 870px) {
+ 
+
+
+    .card-title {
+    
+        font-size: 2rem;
+        font-weight: bold;
+        color: #dc3545; /* Azul para destacar o número */
+    }
+    
+    .card-subtitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333333;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    
+    .card-dates {
+        font-size: 0.6rem;
+        color: #666666;
+        margin-top: 8px;
+    }
+    
+    .btn-login {
+       
+        font-size: 12px;
+       
+      }
+  }
+  
+  @media (min-width: 459px) and (max-width: 674px) {
+ 
+
+    .card-title {
+    
+        font-size: 2rem;
+        font-weight: bold;
+        color: #dc3545; /* Azul para destacar o número */
+    }
+    
+    .card-subtitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333333;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    
+    .card-dates {
+        font-size: 0.6rem;
+        color: #666666;
+        margin-top: 8px;
+    }
+    
+    .btn-login {
+       
+        font-size: 12px;
+       
+      }
+  }
+  
+  @media (min-width: 0px) and (max-width: 458px) {
+    
+    .card-title {
+    
+        font-size: 2rem;
+        font-weight: bold;
+        color: #dc3545; /* Azul para destacar o número */
+    }
+    
+    .card-subtitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333333;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    
+    .card-dates {
+        font-size: 0.6rem;
+        color: #666666;
+        margin-top: 8px;
+    }
+
+    .btn-login {
+       
+        font-size: 12px;
+       
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        transition: transform 0.3s ease;
+    }
+
+    .trofeu-icon {
+        width: 90px;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    .supercopa{
+        width: 70px;
+        height: auto;
+        margin-right: 32px;
+        margin-left: 10px;
+    }
+    
+    .liberta{
+        width: 50px;
+        height: auto;
+        margin-right: 45px;
+        margin-left: 15px;
+    
+    }
+    
+    .recopa{
+        width: 60px;
+        height: auto;
+        margin-right: 32px;
+        margin-left: 10px;
+    
+    }
+    
+   
+  }
