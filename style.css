@@ -966,4 +966,8 @@ h1 {
             background-color: #f9f9f9;
             text-align: right;
         }
+
+        .btn-login {
+            font-size: 12px;
+        }
   }
