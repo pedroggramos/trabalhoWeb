@@ -12,19 +12,19 @@ body{
   }
   
   body::-webkit-scrollbar {
-    width: 12px;               
+    width: 12px;
   }
   
   body::-webkit-scrollbar-track {
-    background: black;        
+    background: black;
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color:  rgba(211,211,211,0.3);   
-    border-radius: 20px;   
+    background-color: rgba(223, 31, 31, 0.3);
+    border-radius: 20px;
     border: 3px solid black;
   }
-
+  
   .volta {
     padding: 10px 10px;
     font-size: 12px;
