@@ -38,6 +38,7 @@ body::-webkit-scrollbar {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 
@@ -823,7 +824,7 @@ h1 {
     grid-template-rows: 200px 200px;
     }
 
-    .mapouter {
+    /* .mapouter {
         position: relative;
         text-align: right;
         height: 250px;
@@ -835,7 +836,7 @@ h1 {
         background: none !important;
         height: 250px;
         width: 250px;
-    }
+    } */
 
     .team-logo {
         width: 30px;
@@ -906,7 +907,7 @@ h1 {
         grid-template-rows: 150px 150px;
         }
   
-        .mapouter {
+        /* .mapouter {
             position: relative;
             text-align: right;
             height: 150px;
@@ -916,9 +917,9 @@ h1 {
         .gmap_canvas {
             overflow: hidden;
             background: none !important;
-            height: 150px;
-            width: 150px;
-        }
+            height: 120px;
+            width: 120px;
+        } */
 
         
         .team-logo {
