@@ -275,6 +275,7 @@ header{
 .noticias2 {
     grid-area: topo;
     background: url('imagens/campeaocdb2024.jpg') right / 150% no-repeat;
+    background-position: center;
     display: flex;
     align-items: end;
 }
